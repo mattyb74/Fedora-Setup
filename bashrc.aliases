@@ -3,3 +3,4 @@
 alias cls='clear'
 alias yum='sudo dnf'
 alias dnf='sudo dnf'
+alias files='nautilus'

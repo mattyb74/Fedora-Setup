@@ -19,8 +19,12 @@ sudo dnf install $(cat ~/fedora.packages) -y
 # Copy aliases from "bashrc.aliases to bashrc file
 cat ~/bashrc.aliases >> ~/.bashrc
 
-# Copy awesomewm files into correct location
-cp -R awesome /.config/awesome
+# Configure awesome
+cp -R /etc/xdg/awesome/ .config/awesome/
+cp -R /usr/share/awesome/* .config/awesome/
+cp -R awesome/rc.lua .config/awesome/
+cp -R awesome/theme.lua .config/awesome/themes/default/
+cp -R awesome/Wallpaper.png .config/awesome/themes/default/
 
 # Uninstall Gnome Desktop Environment
 sudo dnf remove gnome-desktop

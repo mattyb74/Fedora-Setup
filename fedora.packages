@@ -6,6 +6,7 @@ kernel-devel
 kernel-headers
 make
 nautilus
+openssh-server
 steam
 terminator
 timeshift

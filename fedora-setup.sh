@@ -25,6 +25,3 @@ cp -R /usr/share/awesome/* .config/awesome/
 cp -R awesome/rc.lua .config/awesome/
 cp -R awesome/theme.lua .config/awesome/themes/default/
 cp -R awesome/Wallpaper.png .config/awesome/themes/default/
-
-# Uninstall Gnome Desktop Environment
-sudo dnf remove gnome-desktop

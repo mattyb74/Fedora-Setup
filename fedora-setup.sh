@@ -2,13 +2,6 @@
 
 cd ~
 
-# Download files
-wget "https://github.com/mattyb74/Fedora-Setup/raw/master/fedora.packages"
-wget "https://github.com/mattyb74/Fedora-Setup/raw/master/bashrc.aliases"
-wget "https://github.com/mattyb74/Fedora-Setup/blob/master/awesome/Wallpaper.png"
-wget "https://github.com/mattyb74/Fedora-Setup/blob/master/awesome/rc.lua"
-wget "https://github.com/mattyb74/Fedora-Setup/blob/master/awesome/theme.lua"
-
 # Install Rpmfusion non & free repos
 sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm -y
 
@@ -19,11 +12,11 @@ sudo dnf check-upgrade && sudo dnf upgrade -y
 sudo dnf install $(cat ~/fedora.packages) -y
 
 # Copy aliases from "bashrc.aliases to bashrc file
-cat ~/bashrc.aliases >> ~/.bashrc
+cat ~/Fedora-Setup/bashrc.aliases >> ~/.bashrc
 
 # Configure awesome
 cp -R /etc/xdg/awesome/ .config/awesome/
 cp -R /usr/share/awesome/* .config/awesome/
-cp -R awesome/rc.lua .config/awesome/
-cp -R awesome/theme.lua .config/awesome/themes/default/
-cp -R awesome/Wallpaper.png .config/awesome/themes/default/
+cp -R Fedora-Setup/awesome/rc.lua .config/awesome/
+cp -R Fedora-Setup/awesome/theme.lua .config/awesome/themes/default/
+cp -R Fedora-Setup/awesome/Wallpaper.png .config/awesome/themes/default/

@@ -12,4 +12,4 @@ Below is everything is included in this script:
     Update OS
     Install packages from fedora.packages file
     Added custom aliases into bashrc file
-    Configure custom awesomewm
+    Configure awesomewm

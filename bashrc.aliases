@@ -1,1 +1,5 @@
+# File to add aliases into ~/.bashrc
 
+alias cls='clear'
+alias yum='sudo dnf'
+alias dnf='sudo dnf'

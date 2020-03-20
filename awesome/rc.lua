@@ -17,7 +17,7 @@ local hotkeys_popup = require("awful.hotkeys_popup")
 -- Enable hotkeys help widget for VIM and other apps
 -- when client with a matching name is opened:
 require("awful.hotkeys_popup.keys")
-local battery_widget = require("awesome-wm-widgets.battery-widget.battery")
+local batteryarc_widget = require("awesome-wm-widgets.batteryarc-widget.batteryarc")
 local volumebar_widget = require("awesome-wm-widgets.volumebar-widget.volumebar")
 local weather_widget = require("awesome-wm-widgets.weather-widget.weather")
 
@@ -230,10 +230,11 @@ awful.tag(names, s, layouts)
 		    mute_color = '#ff0000',
 		    width = 80,
 		    shape = 'rounded_bar',
-		    margins = 8
+		    margins = 8,
 	}),
-	    battery_widget({
-		    display_notification = true,
+	    batteryarc_widget({
+		    show_current_level = true,
+		    arc_thickness = 4,
 	}),
             mytextclock,
             s.mylayoutbox,

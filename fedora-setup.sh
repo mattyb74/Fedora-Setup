@@ -9,6 +9,9 @@ wget https://github.com/mattyb74/Fedora-Setup/blob/master/bashrc.aliases
 # Install Rpmfusion non & free repos
 sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm -y
 
+# Update OS
+sudo dnf check-upgrade && sudo dnf upgrade -y
+
 # Grab and install packages from downloaded list
 sudo dnf install $(cat ~/fedora.packages) -y
 

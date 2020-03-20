@@ -17,6 +17,10 @@ local hotkeys_popup = require("awful.hotkeys_popup")
 -- Enable hotkeys help widget for VIM and other apps
 -- when client with a matching name is opened:
 require("awful.hotkeys_popup.keys")
+local battery_widget = require("awesome-wm-widgets.battery-widget.battery")
+local volumebar_widget = require("awesome-wm-widgets.volumebar-widget.volumebar")
+local weather_widget = require("awesome-wm-widgets.weather-widget.weather")
+
 
 -- {{{ Error handling
 -- Check if awesome encountered an error during startup and fell back to
@@ -216,6 +220,21 @@ awful.tag(names, s, layouts)
             layout = wibox.layout.fixed.horizontal,
             mykeyboardlayout,
             wibox.widget.systray(),
+	    weather_widget({
+		    api_key = 'api.openweathermap.org/data/2.5/forecast?id=2645724&APPID=fb2cdad200d72aa02f00e0253e9864b3', 
+		    units = 'imperial',
+		    font = 'Source Code Pro Medium 12',
+	}),
+	    volumebar_widget({
+		    main_color = '#af13f7',
+		    mute_color = '#ff0000',
+		    width = 80,
+		    shape = 'rounded_bar',
+		    margins = 8
+	}),
+	    battery_widget({
+		    display_notification = true,
+	}),
             mytextclock,
             s.mylayoutbox,
         },

@@ -9,7 +9,7 @@ sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-rele
 sudo dnf check-upgrade && sudo dnf upgrade -y
 
 # Grab and install packages from downloaded list
-sudo dnf install $(cat ~/fedora.packages) -y
+sudo dnf install $(cat ~/Fedora-Setup/fedora.packages) -y
 
 # Copy aliases from "bashrc.aliases to bashrc file
 cat ~/Fedora-Setup/bashrc.aliases >> ~/.bashrc

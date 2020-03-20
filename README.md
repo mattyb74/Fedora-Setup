@@ -4,7 +4,7 @@ Setup Script for Fedora
 
 Use the following command to run the script easily in one run:
 
-wget https://github.com/mattyb74/Fedora-Setup/raw/master/fedora-setup.sh && sudo chmod +x fedora-setup.sh && ./fedora-setup.sh
+git clone https://github.com/mattyb74/Fedora-Setup.git /~/Fedora-Setup && sudo chmod +x Fedora-Setup/fedora-setup.sh && Fedora-Setup/fedora-setup.sh
 
 Below is everything is included in this script:
 

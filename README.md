@@ -9,5 +9,7 @@ wget https://github.com/mattyb74/Fedora-Setup/blob/master/fedora-setup.sh && sud
 Below is everything is included in this script:
 
     Install workstation repositories
+    Update OS
     Install packages from fedora.packages file
-    Added aliases into bashrc file
+    Added custom aliases into bashrc file
+    Configure custom awesomewm

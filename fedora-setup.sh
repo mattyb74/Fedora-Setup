@@ -3,8 +3,8 @@
 cd ~
 
 # Download files
-wget "https://github.com/mattyb74/Fedora-Setup/blob/master/fedora.packages"
-wget "https://github.com/mattyb74/Fedora-Setup/blob/master/bashrc.aliases"
+wget "https://github.com/mattyb74/Fedora-Setup/raw/master/fedora.packages"
+wget "https://github.com/mattyb74/Fedora-Setup/raw/master/bashrc.aliases"
 wget "https://github.com/mattyb74/Fedora-Setup/tree/master/awesome"
 
 # Install Rpmfusion non & free repos
